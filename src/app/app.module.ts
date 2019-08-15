@@ -15,6 +15,6 @@ import { ProductListComponent } from './product-list/product-list.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ProductListComponent]
 })
 export class AppModule { }
