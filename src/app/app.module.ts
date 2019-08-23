@@ -9,10 +9,14 @@ import { HomeComponent } from './home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductoDatailsComponent } from './producto-datails/producto-datails.component';
+import { CartComponent } from './cart/cart.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'products',      component: ProductListComponent },
+  { path: 'products/:id',      component: ProductoDatailsComponent },
+  { path: 'cart',      component: CartComponent },
   { path: '**', component: PageNotFoundComponent},
 ];
 
@@ -21,7 +25,9 @@ const appRoutes: Routes = [
     AppComponent,
     ProductListComponent,
     HomeComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ProductoDatailsComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
